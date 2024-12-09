@@ -23,10 +23,8 @@ docker build -t gcr.io/[PROJECT_ID]/[SERVICE_NAME] .
 ```bash
    gcloud run deploy [SERVICE_NAME] \
     --image gcr.io/[PROJECT_ID]/[SERVICE_NAME] \
-    --platform managed \
     --tag [YOUR_TAG] \
     --region [REGION] \
-    --port 8000 \
     --allow-unauthenticated
 ```
 
