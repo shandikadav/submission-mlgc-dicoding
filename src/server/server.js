@@ -30,7 +30,7 @@ import { InputError } from "../exceptions/InputError.js";
     if (response instanceof InputError) {
       const newResponse = h.response({
         status: "fail",
-        message: `An error occurred in making a prediction`,
+        message: `Terjadi kesalahan dalam melakukan prediksi`,
       });
       newResponse.code(response.statusCode);
       return newResponse;
@@ -57,7 +57,7 @@ import { InputError } from "../exceptions/InputError.js";
     if (response.statusCode === 400) {
       const newResponse = h.response({
         status: "fail",
-        message: "An error occurred in making a prediction",
+        message: "Terjadi kesalahan dalam melakukan prediksi",
       });
       newResponse.code(400);
       return newResponse;

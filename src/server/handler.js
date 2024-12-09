@@ -24,7 +24,7 @@ async function postPredict(request, h) {
   return h
     .response({
       status: "success",
-      message: "Model is predicted successfully.",
+      message: "Model is predicted successfully",
       data,
     })
     .code(201);
