@@ -1,7 +1,9 @@
-import tf from "@tensorflow/tfjs-node";
-
-async function loadModel() {
-  return tf.loadGraphModel(process.env.MODEL_URL);
+class ClientError extends Error {
+  constructor(message, statusCode = 400) {
+    super(message);
+    this.statusCode = statusCode;
+    this.name = "ClientError";
+  }
 }
 
-export { loadModel };
+export default ClientError;
