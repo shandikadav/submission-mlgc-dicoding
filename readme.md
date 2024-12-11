@@ -6,7 +6,7 @@
 
 1. Buka Google Cloud Cloud Shell lewat [Google Cloud Console](https://console.cloud.google.com/)
 > Note : Jangan lupa gunakan project yang sesuai dengan ketentuan reviewer
-
+<br>
 
 2. Silahkan Clone terlebih dahulu project ini
 ```bash
@@ -14,7 +14,7 @@ git clone https://github.com/shandikadav/submission-mlgc-dicoding.git
 ```
 
 3. Jangan lupa buat bucket untuk menyimpan modelnya dan silahkan copy linknya dan taruh di file .env
-
+<br>
 
 4. Build docker image lewat Dockerfile
  ```bash
@@ -36,4 +36,4 @@ docker build -t gcr.io/[PROJECT_ID]/[SERVICE_NAME] .
 
 <br>
 
-<p>Tunggu sebentar lalu selesai, nanti setelah berhasil di deploy tinggal taruh endpointnya ke bagian front end 🥳🥳</p>
+### Tunggu sebentar lalu selesai, nanti setelah berhasil di deploy tinggal taruh endpointnya ke bagian front end 🥳🥳
