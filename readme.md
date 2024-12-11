@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.tenor.com/o8ECtZBADOYAAAAM/liliel-25-dimensional-seduction.gif">
+    <img src="https://media.tenor.com/o8ECtZBADOYAAAAM/liliel-25-dimensional-seduction.gif" height="281">
 </p>
 
 # Wassup, let's go kita deploy backend pake Cloud Run hehe 😆😆
@@ -7,17 +7,14 @@
 1. Buka Google Cloud Cloud Shell lewat [Google Cloud Console](https://console.cloud.google.com/)
 > Note : Jangan lupa gunakan project yang sesuai dengan ketentuan reviewer
 
-<br>
 
 2. Silahkan Clone terlebih dahulu project ini
 ```bash
 git clone https://github.com/shandikadav/submission-mlgc-dicoding.git
 ```
 
-3. Jangan lupa buat bucket untuk menyimpan modelnya dan silahkan copy linknya dan taruh di file .env<br><br>
-> Note : Buat bucket dan taruh model yang disediakan kedalam folder model dan jangan lupa beri akses
+3. Jangan lupa buat bucket untuk menyimpan modelnya dan silahkan copy linknya dan taruh di file .env
 
-<br>
 
 4. Build docker image lewat Dockerfile
  ```bash
@@ -37,4 +34,6 @@ docker build -t gcr.io/[PROJECT_ID]/[SERVICE_NAME] .
     --allow-unauthenticated
 ```
 
-<p align ="center">Tunggu sebentar lalu selesai, nanti setelah berhasil di deploy tinggal taruh endpointnya ke bagian front end 🥳🥳</p>
+<br>
+
+<p>Tunggu sebentar lalu selesai, nanti setelah berhasil di deploy tinggal taruh endpointnya ke bagian front end 🥳🥳</p>
