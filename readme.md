@@ -1,31 +1,40 @@
 <p align="center">
-  <img src="https://media1.tenor.com/m/ECjUDy1BiFEAAAAd/2%E9%BB%9E5%E6%AC%A1%E5%85%83%E3%81%AE%E8%AA%98%E6%83%91-nitengo-jigen-no-ririsa.gif" width="100%">
+  <img src="https://media.tenor.com/o8ECtZBADOYAAAAM/liliel-25-dimensional-seduction.gif">
 </p>
 
 # Wassup, let's go kita deploy backend pake Cloud Run hehe 😆😆
 
-1. Build docker image lewat Dockerfile
+1. Buka Google Cloud Cloud Shell lewat [Google Cloud Console](https://console.cloud.google.com/)
+> Note : Jangan lupa gunakan project yang sesuai dengan ketentuan reviewer
+
+<br>
+
+2. Silahkan Clone terlebih dahulu project ini
+```bash
+git clone https://github.com/shandikadav/submission-mlgc-dicoding.git
+```
+
+3. Jangan lupa buat bucket untuk menyimpan modelnya dan silahkan copy linknya dan taruh di file .env<br><br>
+> Note : Buat bucket dan taruh model yang disediakan kedalam folder model dan jangan lupa beri akses
+
+<br>
+
+4. Build docker image lewat Dockerfile
  ```bash
 docker build -t gcr.io/[PROJECT_ID]/[SERVICE_NAME] .
 ```
 
-2. Buat tag image untuk Google Container Registry
-```bash
- docker tag [TAG_NAME] gcr.io/[PROJECT_ID]/[SERVICE_NAME]
-```
-
-3. Push image ke Google Container Registry
+5. Push image ke Google Container Registry
 ```bash
  docker push gcr.io/[PROJECT_ID]/[SERVICE_NAME]
 ```
 
-4. Tinggal deploy deh
+6. Tinggal deploy deh
 ```bash
    gcloud run deploy [SERVICE_NAME] \
     --image gcr.io/[PROJECT_ID]/[SERVICE_NAME] \
-    --tag [YOUR_TAG] \
     --region [REGION] \
     --allow-unauthenticated
 ```
 
-## Tunggu sebentar lalu selesai, nanti setelah berhasil di deploy tinggal taruh endpointnya ke bagian front end 🥳🥳
+<p align ="center">Tunggu sebentar lalu selesai, nanti setelah berhasil di deploy tinggal taruh endpointnya ke bagian front end 🥳🥳</p>
